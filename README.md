@@ -3,7 +3,7 @@
 ![Project overview](https://sv1.picz.in.th/images/2023/02/09/LE6ekV.jpg)
 
 ## Data pipeline managed by Airflow
-![Data pipeline](https://sv1.picz.in.th/images/2023/02/09/LEnBab.png)
+![Data pipeline ](https://sv1.picz.in.th/images/2023/02/09/LEnBab.png)
 
 
 ## Data Visualization on Looker Studio (Google Data Studio)
