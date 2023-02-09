@@ -5,10 +5,10 @@
 ## Collecting data, import to Data Lake on Google Cloud Storage 
 ![Data lake ](image/data-lake.PNG)
 
-## Extarct data via Data Pipeline managed by Airflow
+## Automate extracted and transformed data via Data Pipeline managed by Apache Airflow
 ![Data pipeline ](image/dags.png)
 
-## Import Clean data to the Data Warehouse on Google BigQuery 
+## Load clean data to the Data Warehouse on Google BigQuery 
 ![Data warehouse](image/data-warehouse.PNG)
 
 ## Data Visualization on Looker Studio (Google Data Studio)
