@@ -25,7 +25,7 @@ def get_data_from_mysql(transaction_path):
     audible_data = mysqlserver.get_pandas_df(sql="SELECT * FROM audible_data")
     audible_transaction = mysqlserver.get_pandas_df(sql="SELECT * FROM audible_transaction")
 
-    # Merge data จาก 2 DataFrame เหมือนใน workshop1
+    # Merge data 
     df = audible_transaction.merge(audible_data, how="left", left_on="book_id", right_on="Book_ID")
 
     # Save ไฟล์ CSV ไปที่ transaction_path ("/home/airflow/gcs/data/audible_data_merged.csv")
@@ -79,8 +79,6 @@ with DAG(
 
     dag.doc_md = """
     # Workshop5: Load to BigQuery ด้วยคำสั่ง bq load
-    bq command เป็น command-line tool ที่สามารถใช้จัดการกับ BigQuery ได้
-    ดูเพิ่มเติมได้ที่นี่ https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv#loading_csv_data_into_a_table
     """
 
     t1 = PythonOperator(
